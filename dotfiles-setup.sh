@@ -29,6 +29,8 @@ if [ $? -eq 0 ]; then
   cd "$REPO_NAME"
   "$STOW" fish
   "$STOW" nvim
+  "$STOW" code
+  "$STOW" zed
   
 else
   echo "Failed to clone the repository."
