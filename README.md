@@ -13,7 +13,6 @@ A Fedora Linux System Tool that automates the setup and configuration of a Fedor
   - Office applications
   - Media packages
   - Fonts
-- 🛠️ Automatic installation of yay AUR helper
 - 🖥️ GNOME desktop environment setup with tiling-like features
 - 🎮 Flatpak integration for specific applications
 - ⚙️ Automatic service configuration
