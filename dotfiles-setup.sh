@@ -30,6 +30,8 @@ if [ $? -eq 0 ]; then
   "$STOW" fish
   "$STOW" nvim
   "$STOW" code
+  "$STOW" git
+  "$STOW" gitnow
   "$STOW" zed
   
 else
