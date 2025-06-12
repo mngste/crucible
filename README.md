@@ -33,7 +33,9 @@ git clone https://github.com/mngste/crucible.git
 ```
 
 2. Run the setup script:
-
+```bash
+./run.sh --dev-only
+```
 ```bash
 ./run.sh
 ```
