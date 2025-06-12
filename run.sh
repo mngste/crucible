@@ -100,8 +100,12 @@ else
   . gnome/gnome-settings.sh
   
   # Some programs just run better as flatpaks. Like discord/spotify
-  echo "Installing flatpaks (like discord and spotify)"
+  echo "Installing flatpaks (like discord)"
   . install-flatpaks.sh
+
+  # fisher plugin for fish
+  echo "Installing fisher app"
+  . install-fisher.sh
 fi
 
 echo "Setup complete! You may want to reboot your system."
