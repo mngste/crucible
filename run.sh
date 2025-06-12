@@ -109,3 +109,4 @@ else
 fi
 
 echo "Setup complete! You may want to reboot your system."
+echo "Run sudo chsh -s /usr/bin/fish to change default shell"
