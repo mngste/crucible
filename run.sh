@@ -106,6 +106,11 @@ else
   # fisher plugin for fish
   echo "Installing fisher app"
   . install-fisher.sh
+
+  # Install dotfiles
+  echo "Installing dotfiles/configurations..."
+  . dotfiles-setup.sh
+  
 fi
 
 echo "Setup complete! You may want to reboot your system."
