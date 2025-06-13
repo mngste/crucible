@@ -54,4 +54,4 @@ echo "Installing dotfiles/configurations..."
 
 
 echo "Setup complete! You may want to reboot your system."
-echo "Run sudo chsh -s /usr/bin/fish to change default shell"
+echo "Run sudo chsh -s /usr/bin/fish && chsh -s /usr/bin/fish to change default shell"
