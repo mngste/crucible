@@ -15,3 +15,4 @@ neovim
 git
 gnome-disk-utility
 gnome-tweaks
+jetbrains-mono-fonts-all
