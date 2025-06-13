@@ -5,14 +5,7 @@ A Fedora Linux System Tool that automates the setup and configuration of a Fedor
 ## Features
 
 - 🔄 Automated system updates
-- 📦 Package installation by categories:
-  - System utilities
-  - Development tools
-  - System maintenance tools
-  - Desktop environment
-  - Office applications
-  - Media packages
-  - Fonts
+- 📦 Package installation
 - 🖥️ GNOME desktop environment setup with tiling-like features
 - 🎮 Flatpak integration for specific applications
 - ⚙️ Automatic service configuration
@@ -34,9 +27,6 @@ git clone https://github.com/mngste/crucible.git
 
 2. Run the setup script:
 ```bash
-./run.sh --dev-only
-```
-```bash
 ./run.sh
 ```
 
@@ -45,3 +35,17 @@ git clone https://github.com/mngste/crucible.git
 4. The script will handle the rest of the setup process.
 
 5. After the setup is complete, you can reboot your system to see the changes.
+
+6. Install eza
+```bash
+wget -c https://github.com/eza-community/eza/releases/latest/download/eza_x86_64-unknown-linux-gnu.tar.gz -O - | tar xz
+```
+```bash
+sudo chmod +x eza
+```
+```bash
+sudo chown root:root eza
+```
+```bash
+sudo mv eza /usr/bin/eza
+```
