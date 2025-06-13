@@ -1,6 +1,7 @@
 FLATPAKS=(
   "brave"
   "discord"
+  "zen"
 )
 
 for pak in "${FLATPAKS[@]}"; do
