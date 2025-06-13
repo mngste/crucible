@@ -1,8 +1,7 @@
 #!/usr/bin/bash
 
-STOW=$(cd config && stow -v -t ~)
 ORIGINAL_DIR=$(pwd)
-REPO_URL="https://github.com/mngste/dotfiles"
+REPO_URL="git@github.com:mngste/dotfiles.git"
 REPO_NAME="dotfiles"
 
 
@@ -26,14 +25,12 @@ fi
 
 # Check if the clone was successful
 if [ $? -eq 0 ]; then
-  cd "$REPO_NAME"
-  "$STOW" fish
-  "$STOW" nvim
-  "$STOW" code
-  "$STOW" git
-  "$STOW" gitnow
-  "$STOW" zed
-  
+  cd "$REPO_NAME/config"
+  stow -v -t ~ fish
+  stow -v -t ~ nvim
+  stow -v -t ~ code
+  stow -v -t ~ git
+  stow -v -t ~ zed
 else
   echo "Failed to clone the repository."
   exit 1

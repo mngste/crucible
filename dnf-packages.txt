@@ -1,0 +1,17 @@
+htop
+btop
+stow
+fastfetch
+fzf
+zip
+unzip
+curl
+fish
+rsync
+kitty
+vim
+bat
+neovim
+git
+gnome-disk-utility
+gnome-tweaks

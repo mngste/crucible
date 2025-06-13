@@ -18,6 +18,6 @@ install_packages() {
 
   if [ ${#to_install[@]} -ne 0 ]; then
     echo "Installing: ${to_install[*]}"
-    dnf install -y "${to_install[@]}"
+    sudo dnf install "${to_install[@]}" -y
   fi
 } 
