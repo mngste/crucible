@@ -1,8 +1,6 @@
 #!/usr/bin/bash
 
 SCRIPT_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
-# Source utils.sh from parent directory
-source "$SCRIPT_DIR/../utils.sh"
 
 
 # Install gnome-extensions-cli only if not already installed
