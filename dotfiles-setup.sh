@@ -6,7 +6,7 @@ REPO_NAME="dotfiles"
 
 
 is_stow_installed() {
-  dnf list installed "stow" &> /dev/null
+  $pm list installed "stow" &> /dev/null
 }
 
 if ! is_stow_installed; then
