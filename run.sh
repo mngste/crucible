@@ -19,17 +19,27 @@ print_logo
 # Exit on any error
 set -e
 
+# ask if ubuntu or fedora
+pm=''
+read -p "Sur quel OS lancer le script Fedora, Ubuntu? (f/u/q) " ans;
+
+case $ans in
+    f)pm='dnf';;
+    u)pm='apt';;
+    q)exit;;
+esac
+
 # Update the system first
 echo "Updating system..."
-sudo dnf update
+sudo $pm update
 
 # Function to install software
 echo "Installing Software"
 if [ -f ./packages.txt ]; then
-  sudo dnf install -y $(cat ./packages.txt)
+  sudo $pm install -y $(cat ./packages.txt)
   echo "Software has been installed"
 else
-  log_action "dnf-packages.txt not found"
+  log_action "packages.txt not found"
 fi
   
 # Install gnome specific things to make it like a tiling WM
