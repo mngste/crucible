@@ -31,7 +31,9 @@ if [ $? -eq 0 ]; then
   stow -v -t ~ code
   stow -v -t ~ git
   stow -v -t ~ zed
+  stow -v -t ~ fonts
   mv ~/gitignore ~/.gitignore
+  fc-cache -f -v
 else
   echo "Failed to clone the repository."
   exit 1
