@@ -62,6 +62,9 @@ echo "Installing flatpaks (like discord)"
 echo "Installing dotfiles/configurations..."
 . ./dotfiles-setup.sh
 
+# Making fish default shell
+echo "Running sudo chsh -s /usr/bin/fish && chsh -s /usr/bin/fish to change default shell"
+sudo chsh -s /usr/bin/fish && chsh -s /usr/bin/fish
 
 echo "Setup complete! You may want to reboot your system."
-echo "Run sudo chsh -s /usr/bin/fish && chsh -s /usr/bin/fish to change default shell"
+
