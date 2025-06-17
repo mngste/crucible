@@ -1,6 +1,6 @@
 # Crucible 🛠️
 
-A Fedora Linux System Tool that automates the setup and configuration of a Fedora Linux system with Gnome. It installs and configures packages, desktop environments, and various utilities to create a fully functional development environment.
+A Fedora/Ubuntu Linux System Tool that automates the setup and configuration of a Fedora/Ubuntu Linux system with Gnome. It installs and configures packages, desktop environments, and various utilities to create a fully functional development environment.
 
 ## Features
 
@@ -16,6 +16,7 @@ A Fedora Linux System Tool that automates the setup and configuration of a Fedor
 - A fresh Fedora Linux installation
 - Internet connection
 - sudo privileges
+- connect shh and giihub
 
 ## Installation
 
@@ -36,7 +37,7 @@ git clone https://github.com/mngste/crucible.git
 
 5. After the setup is complete, you can reboot your system to see the changes.
 
-6. Install eza
+6. Install eza for fedora
 ```bash
 wget -c https://github.com/eza-community/eza/releases/latest/download/eza_x86_64-unknown-linux-gnu.tar.gz -O - | tar xz
 ```
