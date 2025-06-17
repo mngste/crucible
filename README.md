@@ -37,16 +37,47 @@ git clone https://github.com/mngste/crucible.git
 
 5. After the setup is complete, you can reboot your system to see the changes.
 
-6. Install eza for fedora
-```bash
-wget -c https://github.com/eza-community/eza/releases/latest/download/eza_x86_64-unknown-linux-gnu.tar.gz -O - | tar xz
-```
-```bash
-sudo chmod +x eza
-```
-```bash
-sudo chown root:root eza
-```
-```bash
-sudo mv eza /usr/bin/eza
-```
+### Install eza
+
+<details>
+  <summary>fedora</summary>
+  
+  ```bash
+  wget -c https://github.com/eza-community/eza/releases/latest/download/eza_x86_64-unknown-linux-gnu.tar.gz -O - | tar xz
+  ```
+  ```bash
+  sudo chmod +x eza
+  ```
+  ```bash
+  sudo chown root:root eza
+  ```
+  ```bash
+  sudo mv eza /usr/bin/eza
+  ```
+</details>
+
+<details>
+  <summary>ubuntu</summary>
+  
+  Eza is available from [deb.gierens.de](http://deb.gierens.de). The GPG public
+  key is in this repo under [deb.asc](/deb.asc).
+
+  First make sure you have the `gpg` command, and otherwise install it via:
+  
+  ```bash
+  sudo apt update
+  sudo apt install -y gpg
+  ```
+  
+  Then install eza via:
+  
+  ```bash
+  sudo mkdir -p /etc/apt/keyrings
+  wget -qO- https://raw.githubusercontent.com/eza-community/eza/main/deb.asc | sudo gpg --dearmor -o /etc/apt/keyrings/gierens.gpg
+  echo "deb [signed-by=/etc/apt/keyrings/gierens.gpg] http://deb.gierens.de stable main" | sudo tee /etc/apt/sources.list.d/gierens.list
+  sudo chmod 644 /etc/apt/keyrings/gierens.gpg /etc/apt/sources.list.d/gierens.list
+  sudo apt update
+  sudo apt install -y eza
+  ```
+</details>
+
