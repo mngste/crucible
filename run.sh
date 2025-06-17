@@ -31,12 +31,12 @@ esac
 
 # Update the system first
 echo "Updating system..."
-sudo $pm update
+sudo "$pm" update
 
 # Function to install software
 echo "Installing Software"
 if [ -f ./packages.txt ]; then
-  sudo $pm install -y $(cat ./packages.txt)
+  sudo "$pm" install -y $(cat ./packages.txt)
   echo "Software has been installed"
 else
   log_action "packages.txt not found"
