@@ -25,8 +25,8 @@ sudo dnf update
 
 # Function to install software
 echo "Installing Software"
-if [ -f ./dnf-packages.txt ]; then
-  sudo dnf install -y $(cat ./dnf-packages.txt)
+if [ -f ./packages.txt ]; then
+  sudo dnf install -y $(cat ./packages.txt)
   echo "Software has been installed"
 else
   log_action "dnf-packages.txt not found"
