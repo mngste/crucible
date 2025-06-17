@@ -60,7 +60,7 @@ echo "Installing flatpaks (like discord)"
 
 # Install dotfiles
 echo "Installing dotfiles/configurations..."
-. dotfiles-setup.sh
+. ./dotfiles-setup.sh
 
 
 echo "Setup complete! You may want to reboot your system."
