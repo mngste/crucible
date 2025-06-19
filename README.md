@@ -23,7 +23,7 @@ A Fedora/Ubuntu Linux System Tool that automates the setup and configuration of 
 1. Clone this repository:
 
 ```bash
-git clone https://github.com/mngste/crucible.git
+git clone git@github.com:mngste/crucible.git
 ```
 
 2. Run the setup script:
