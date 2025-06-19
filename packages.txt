@@ -14,8 +14,6 @@ vim
 bat
 neovim
 git
-zed
 gnome-disk-utility
 gnome-tweaks
 jetbrains-mono-fonts-all
-code
