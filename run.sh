@@ -21,7 +21,7 @@ set -e
 
 # ask if ubuntu or fedora
 pm=''
-read -p "Sur quel OS lancer le script Fedora, Ubuntu? (f/u/q) " ans;
+read -p "On which OS, do you launch the script Fedora, Ubuntu? (f/u/q) " ans;
 
 case $ans in
     f)pm='dnf';;
