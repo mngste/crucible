@@ -130,8 +130,12 @@ else
   . dotfiles-setup.sh
   
   # Install TPM
-  echo "Installing TPM and TMUX extensions..."
-  . install-tpm.sh
+  #echo "Installing TPM and TMUX extensions..."
+  #. install-tpm.sh
+
+  sudo systemctl start bluetooth
+  systemctl enable bluetooth
+  sudo chsh -s /usr/bin/fish && chsh -s /usr/bin/fish
 fi
 
 echo "Setup complete! You may want to reboot your system."
