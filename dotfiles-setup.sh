@@ -6,17 +6,17 @@ REPO_NAME="dotfiles"
 
 
 is_stow_installed() {
-  if [[$pm = "pacman"]]; then
+  if [[ "$pm" = "pacman" ]]; then
     $pm -Qi "stow" &> /dev/null
   else
     $pm list installed "stow" &> /dev/null
   fi 
 }
 
-if ! is_stow_installed; then
-  echo "Install stow first"
-  exit 1
-fi
+#if ! is_stow_installed; then
+#  echo "Install stow first"
+#  exit 1
+#fi
 
 cd ~
 
@@ -36,7 +36,7 @@ if [ $? -eq 0 ]; then
   stow -v -t ~ git
   stow -v -t ~ zed
   stow -v -t ~ fonts
-  stow -v -t ~tmux
+  #stow -v -t ~ tmux
   mv ~/gitignore ~/.gitignore
   fc-cache -f -v
 else
