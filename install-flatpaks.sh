@@ -3,7 +3,6 @@ FLATPAKS=(
   "discord"
 )
 
-sudo apt install gnome-software-plugin-flatpak -y
 sudo flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo
 
 for pak in "${FLATPAKS[@]}"; do
