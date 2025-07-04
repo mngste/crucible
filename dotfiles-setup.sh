@@ -36,6 +36,7 @@ if [ $? -eq 0 ]; then
   stow -v -t ~ git
   stow -v -t ~ zed
   stow -v -t ~ fonts
+  stow -v -t ~tmux
   mv ~/gitignore ~/.gitignore
   fc-cache -f -v
 else
