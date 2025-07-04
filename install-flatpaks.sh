@@ -1,7 +1,6 @@
 FLATPAKS=(
   "brave"
   "discord"
-  "zen"
 )
 
 sudo apt install gnome-software-plugin-flatpak -y
