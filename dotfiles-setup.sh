@@ -6,7 +6,11 @@ REPO_NAME="dotfiles"
 
 
 is_stow_installed() {
-  $pm list installed "stow" &> /dev/null
+  if [[$pm = "pacman"]]; then
+    $pm -Qi "stow" &> /dev/null
+  else
+    $pm list installed "stow" &> /dev/null
+  fi 
 }
 
 if ! is_stow_installed; then
