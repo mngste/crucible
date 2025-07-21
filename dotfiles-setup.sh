@@ -13,11 +13,6 @@ is_stow_installed() {
   fi 
 }
 
-#if ! is_stow_installed; then
-#  echo "Install stow first"
-#  exit 1
-#fi
-
 cd ~
 
 # Check if the repository already exists
@@ -32,11 +27,8 @@ if [ $? -eq 0 ]; then
   cd "$REPO_NAME/config"
   stow -v -t ~ fish
   stow -v -t ~ nvim
-  stow -v -t ~ code
   stow -v -t ~ git
-  stow -v -t ~ zed
   stow -v -t ~ fonts
-  #stow -v -t ~ tmux
   mv ~/gitignore ~/.gitignore
   fc-cache -f -v
 else
