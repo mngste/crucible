@@ -73,6 +73,11 @@ echo "Installing dotfiles/configurations..."
 echo "Running sudo chsh -s /usr/bin/fish && chsh -s /usr/bin/fish to change default shell"
 sudo chsh -s /usr/bin/fish && chsh -s /usr/bin/fish
 
+# install ghostty
+if [[ "$pm" = "apt" ]]; then
+    sudo snap install ghostty --edge --classic
+fi
+
 # disable version check only for switcher and gnome 48 (to remove when working)
 echo "disable version check only for switcher and gnome 48 (to remove when working)"
 gsettings set org.gnome.shell disable-extension-version-validation "true"
