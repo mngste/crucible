@@ -73,5 +73,9 @@ echo "Installing dotfiles/configurations..."
 echo "Running sudo chsh -s /usr/bin/fish && chsh -s /usr/bin/fish to change default shell"
 sudo chsh -s /usr/bin/fish && chsh -s /usr/bin/fish
 
+# disable version check only for switcher and gnome 48 (to remove when working)
+echo "disable version check only for switcher and gnome 48 (to remove when working)"
+gsettings set org.gnome.shell disable-extension-version-validation "true"
+
 echo "Setup complete! You may want to reboot your system."
 
