@@ -6,7 +6,7 @@ print_logo() {
     ______                _ __    __     
    / ____/______  _______(_) /_  / /__   
   / /   / ___/ / / / ___/ / __ \/ / _ \  
- / /___/ /  / /_/ / /__/ / /_/ / /  __/  Fedora Linux System Crafting Tool
+ / /___/ /  / /_/ / /__/ / /_/ / /  __/  Fedora/Ubuntu Linux System Crafting Tool
  \____/_/   \__,_/\___/_/_.___/_/\___/   by: mngste
 
 EOF
