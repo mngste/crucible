@@ -1,6 +1,4 @@
 FLATPAKS=(
-  "brave"
-  "discord"
   "joplin"
   "chromium"
 )
