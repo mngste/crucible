@@ -14,9 +14,6 @@ vim
 bat
 neovim
 git
-adb
-fastboot
-scrcpy
 gnome-disk-utility
 gnome
 gnome-tweaks
