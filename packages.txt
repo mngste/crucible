@@ -18,4 +18,3 @@ gnome-disk-utility
 gnome
 gnome-tweaks
 gpg
-fonts-jetbrains-mono
