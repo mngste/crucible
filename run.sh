@@ -44,7 +44,7 @@ fi
   
 # Install gnome specific things to make it like a tiling WM
 echo "Installing Gnome extensions..."
-. gnome/gnome-extensions.sh
+#. gnome/gnome-extensions.sh
 echo "Setting Gnome hotkeys..."
 . gnome/gnome-hotkeys.sh
 echo "Configuring Gnome..."
