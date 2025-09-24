@@ -13,3 +13,4 @@ bat
 neovim
 git
 gpg
+build-essential
