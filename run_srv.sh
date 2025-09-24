@@ -52,6 +52,7 @@ sudo chsh -s /usr/bin/fish
 
 # Install Rust and Eza
 curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
+. "$HOME/.cargo/env"
 source "$HOME/.cargo/env.fish"
 
 echo "Setup complete! You may want to reboot your system."
