@@ -201,13 +201,3 @@ move-window-right=['']
 overridden-settings='{}'
 selected-layouts=[['Layout 1'], ['Layout 1'], ['Layout 1'], ['Layout 1'], ['Layout 1'], ['Layout 1']]
 window-border-width=uint32 1
-
-[tophat]
-meter-fg-color='#e920a3'
-mount-to-monitor='/'
-network-usage-unit='bits'
-show-animations=true
-show-cpu=true
-show-disk=true
-show-icons=false
-show-mem=true
