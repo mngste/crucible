@@ -44,7 +44,7 @@ fi
   
 # Install gnome specific things to make it like a tiling WM
 echo "Installing Gnome extensions..."
-#. gnome/gnome-extensions.sh
+. gnome/gnome-extensions.sh
 echo "Setting Gnome hotkeys..."
 . gnome/gnome-hotkeys.sh
 echo "Configuring Gnome..."
@@ -55,15 +55,15 @@ echo "Installing flatpaks (like discord)"
 . install-flatpaks.sh
 
 # install eza on ubuntu
-# echo "Installing eza on ubuntu"
-#if [[ "$pm" = "apt" ]]; then
-#    sudo mkdir -p /etc/apt/keyrings
-#    wget -qO- https://raw.githubusercontent.com/eza-community/eza/main/deb.asc | sudo gpg --dearmor -o /etc/apt/keyrings/gierens.gpg
-#    echo "deb [signed-by=/etc/apt/keyrings/gierens.gpg] http://deb.gierens.de stable main" | sudo tee /etc/apt/sources.list.d/gierens.list
-#    sudo chmod 644 /etc/apt/keyrings/gierens.gpg /etc/apt/sources.list.d/gierens.list
-#   sudo "$pm" update
-#    sudo "$pm" install -y eza
-#fi 
+echo "Installing eza on ubuntu"
+if [[ "$pm" = "apt" ]]; then
+   sudo mkdir -p /etc/apt/keyrings
+   wget -qO- https://raw.githubusercontent.com/eza-community/eza/main/deb.asc | sudo gpg --dearmor -o /etc/apt/keyrings/gierens.gpg
+   echo "deb [signed-by=/etc/apt/keyrings/gierens.gpg] http://deb.gierens.de stable main" | sudo tee /etc/apt/sources.list.d/gierens.list
+   sudo chmod 644 /etc/apt/keyrings/gierens.gpg /etc/apt/sources.list.d/gierens.list
+   sudo "$pm" update
+   sudo "$pm" install -y eza
+fi 
 
 # Install dotfiles
 echo "Installing dotfiles/configurations..."
