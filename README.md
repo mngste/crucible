@@ -13,7 +13,7 @@ A Fedora/Ubuntu Linux System Tool that automates the setup and configuration of 
 
 ## Prerequisites
 
-- A fresh Fedora Linux installation
+- A fresh Fedora/Ubuntu Linux installation
 - Internet connection
 - sudo privileges
 - connect shh and giihub
@@ -36,48 +36,3 @@ git clone git@github.com:mngste/crucible.git
 4. The script will handle the rest of the setup process.
 
 5. After the setup is complete, you can reboot your system to see the changes.
-
-### Install eza
-
-<details>
-  <summary>fedora</summary>
-  
-  ```bash
-  wget -c https://github.com/eza-community/eza/releases/latest/download/eza_x86_64-unknown-linux-gnu.tar.gz -O - | tar xz
-  ```
-  ```bash
-  sudo chmod +x eza
-  ```
-  ```bash
-  sudo chown root:root eza
-  ```
-  ```bash
-  sudo mv eza /usr/bin/eza
-  ```
-</details>
-
-<details>
-  <summary>ubuntu</summary>
-  
-  Eza is available from [deb.gierens.de](http://deb.gierens.de). The GPG public
-  key is in this repo under [deb.asc](/deb.asc).
-
-  First make sure you have the `gpg` command, and otherwise install it via:
-  
-  ```bash
-  sudo apt update
-  sudo apt install -y gpg
-  ```
-  
-  Then install eza via:
-  
-  ```bash
-  sudo mkdir -p /etc/apt/keyrings
-  wget -qO- https://raw.githubusercontent.com/eza-community/eza/main/deb.asc | sudo gpg --dearmor -o /etc/apt/keyrings/gierens.gpg
-  echo "deb [signed-by=/etc/apt/keyrings/gierens.gpg] http://deb.gierens.de stable main" | sudo tee /etc/apt/sources.list.d/gierens.list
-  sudo chmod 644 /etc/apt/keyrings/gierens.gpg /etc/apt/sources.list.d/gierens.list
-  sudo apt update
-  sudo apt install -y eza
-  ```
-</details>
-
