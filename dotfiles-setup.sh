@@ -4,15 +4,6 @@ ORIGINAL_DIR=$(pwd)
 REPO_URL="git@github.com:mngste/dotfiles.git"
 REPO_NAME="dotfiles"
 
-
-is_stow_installed() {
-  if [[ "$pm" = "pacman" ]]; then
-    $pm -Qi "stow" &> /dev/null
-  else
-    $pm list installed "stow" &> /dev/null
-  fi 
-}
-
 cd ~
 
 # Check if the repository already exists
