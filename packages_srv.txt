@@ -14,3 +14,4 @@ neovim
 git
 gpg
 build-essential
+fontconfig
