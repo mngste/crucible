@@ -18,3 +18,4 @@ gnome-disk-utility
 gnome
 gnome-tweaks
 gpg
+build-essential
