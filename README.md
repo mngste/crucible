@@ -20,6 +20,20 @@ A Fedora/Ubuntu Linux System Tool that automates the setup and configuration of 
 
 ## Installation
 
+TODO before
+```bash
+ssh-keygen -t ed25519 -C "mangouste@mosaurus.com"
+```
+```bash
+eval "$(ssh-agent -s)"
+```
+```bash
+ssh-add ~/.ssh/id_ed25519
+```
+```bash
+cat ~/.ssh/id_ed25519.pub
+```
+
 1. Clone this repository:
 
 ```bash
