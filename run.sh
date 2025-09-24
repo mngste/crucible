@@ -64,7 +64,7 @@ sudo chsh -s /usr/bin/fish $(whoami)
 
 # Install Rust and Eza
 curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
-source "$HOME/.cargo/env.fish"
+. "$HOME/.cargo/env"
 
 # disable version check only for switcher and gnome 48 (to remove when working)
 echo "disable version check only for switcher and gnome 48 (to remove when working)"
