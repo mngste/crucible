@@ -54,17 +54,6 @@ echo "Configuring Gnome..."
 echo "Installing flatpaks (like discord)"
 . install-flatpaks.sh
 
-# install eza on ubuntu
-echo "Installing eza on ubuntu"
-if [[ "$pm" = "apt" ]]; then
-   sudo mkdir -p /etc/apt/keyrings
-   wget -qO- https://raw.githubusercontent.com/eza-community/eza/main/deb.asc | sudo gpg --dearmor -o /etc/apt/keyrings/gierens.gpg
-   echo "deb [signed-by=/etc/apt/keyrings/gierens.gpg] http://deb.gierens.de stable main" | sudo tee /etc/apt/sources.list.d/gierens.list
-   sudo chmod 644 /etc/apt/keyrings/gierens.gpg /etc/apt/sources.list.d/gierens.list
-   sudo "$pm" update
-   sudo "$pm" install -y eza
-fi 
-
 # Install dotfiles
 echo "Installing dotfiles/configurations..."
 . ./dotfiles-setup.sh
@@ -72,6 +61,11 @@ echo "Installing dotfiles/configurations..."
 # Making fish default shell
 echo "Running sudo chsh -s /usr/bin/fish && chsh -s /usr/bin/fish to change default shell"
 sudo chsh -s /usr/bin/fish && chsh -s /usr/bin/fish
+
+# Install Rust and Eza
+sudo apt install build-essential
+curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
+source "$HOME/.cargo/env.fish"
 
 # disable version check only for switcher and gnome 48 (to remove when working)
 echo "disable version check only for switcher and gnome 48 (to remove when working)"
