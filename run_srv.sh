@@ -48,7 +48,7 @@ echo "Installing dotfiles/configurations..."
 
 # Making fish default shell
 echo "Running sudo chsh -s /usr/bin/fish && chsh -s /usr/bin/fish to change default shell"
-sudo chsh -s /usr/bin/fish && chsh -s /usr/bin/fish
+sudo chsh -s /usr/bin/fish
 
 # Install Rust and Eza
 curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
