@@ -50,3 +50,7 @@ git clone git@github.com:mngste/crucible.git
 4. The script will handle the rest of the setup process.
 
 5. After the setup is complete, you can reboot your system to see the changes.
+
+```fish
+source "$HOME/.cargo/env.fish"
+```
