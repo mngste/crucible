@@ -1,7 +1,7 @@
 #!/usr/bin/bash
 
 ORIGINAL_DIR=$(pwd)
-REPO_URL="git@github.com:mngste/dotfiles.git"
+REPO_URL="https://github.com/mngste/dotfiles.git"
 REPO_NAME="dotfiles"
 
 cd ~
