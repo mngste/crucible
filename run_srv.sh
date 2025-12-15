@@ -32,6 +32,10 @@ else
   log_action "packages_srv.txt not found"
 fi
 
+# make bat by default
+mkdir -p ~/.local/bin
+ln -s /usr/bin/batcat ~/.local/bin/bat
+
 # Install dotfiles
 echo "Installing dotfiles/configurations..."
 . ./dotfiles-setup.sh
