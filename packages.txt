@@ -2,7 +2,6 @@ htop
 btop
 stow
 pipx
-neofetch
 flatpak
 fzf
 zip
@@ -14,8 +13,4 @@ vim
 bat
 neovim
 git
-gnome-disk-utility
-gnome
-gnome-tweaks
-gpg
-build-essential
+xz
