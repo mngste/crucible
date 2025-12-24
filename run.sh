@@ -59,6 +59,10 @@ else
   log_action "packages.txt not found"
 fi
 
+# make bat by default
+mkdir -p ~/.local/bin
+ln -s /usr/bin/batcat ~/.local/bin/bat
+
 # Install dotfiles
 echo "${UNDERLINE} Installing dotfiles/configurations..."
 . ./dotfiles-setup.sh
