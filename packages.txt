@@ -2,7 +2,6 @@ htop
 btop
 stow
 pipx
-flatpak
 fzf
 zip
 unzip
