@@ -12,4 +12,3 @@ vim
 bat
 neovim
 git
-xz
