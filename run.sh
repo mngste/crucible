@@ -31,16 +31,16 @@ print_logo
 echo -e "${BLUE}    Sit back while we install your linux software"
 echo
 
-pm=''
+pm='dnf'
 
-if [[ -f /etc/os-release ]]; then
+if [ -f /etc/os-release ]; then
     source /etc/os-release
-    if [[ "$ID" === "fedora" ]]; then
+    if [ "$ID" === "fedora" ]; then
         pm='dnf'
         exit 1
     fi
 else
-    if [[ "$ID" === "linuxmint" ]] || [[ "$ID" === "ubuntu" ]]; then
+    if [ "$ID" === "linuxmint" ] || [ "$ID" === "ubuntu" ]; then
         pm='apt'
         exit 1
     fi
@@ -48,12 +48,12 @@ fi
 
 # Update the system first
 echo "${CYAN} Updating system..."
-sudo ${pm} update && sudo ${pm} upgrade --refresh
+sudo $pm update && sudo $pm upgrade --refresh
 
 # Function to install software
 echo "Installing Software"
 if [[ -f ./packages.txt ]]; then
-  sudo ${pm} install -y $(cat ./packages.txt)
+  sudo $pm install -y $(cat ./packages.txt)
   echo "Software has been installed"
 else
   log_action "packages.txt not found"
