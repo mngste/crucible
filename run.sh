@@ -31,7 +31,7 @@ print_logo
 echo -e "${BLUE}    Sit back while we install your linux software"
 echo
 
-pm='dnf'
+pm='apt'
 
 if [ -f /etc/os-release ]; then
     source /etc/os-release
@@ -48,7 +48,7 @@ fi
 
 # Update the system first
 echo "${CYAN} Updating system..."
-sudo $pm update && sudo $pm upgrade --refresh
+sudo $pm update && sudo $pm upgrade -y
 
 # Function to install software
 echo "Installing Software"
