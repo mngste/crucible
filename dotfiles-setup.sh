@@ -20,6 +20,7 @@ if [ $? -eq 0 ]; then
   stow -v -t ~ nvim
   stow -v -t ~ git
   stow -v -t ~ fonts
+  stow -v -t ~ alacritty
   mv ~/gitignore ~/.gitignore
   fc-cache -f -v
 else
