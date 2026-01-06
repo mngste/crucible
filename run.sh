@@ -58,6 +58,10 @@ echo "${UNDERLINE} Installing dotfiles/configurations..."
 echo "Running sudo chsh -s /usr/bin/fish && chsh -s /usr/bin/fish to change default shell"
 sudo chsh -s /usr/bin/fish $(whoami)
 
+# Install alacritty
+echo "Install alacritty"
+. ./alacritty.sh
+
 # install fresh ide terminal
 curl https://raw.githubusercontent.com/sinelaw/fresh/refs/heads/master/scripts/install.sh | sh
 
