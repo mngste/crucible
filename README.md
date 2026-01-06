@@ -1,6 +1,6 @@
 # Crucible 🛠️
 
-A Fedora/Ubuntu Linux System Tool that automates the setup and configuration of a Fedora/Ubuntu Linux system with Gnome. It installs and configures packages, desktop environments, and various utilities to create a fully functional development environment.
+A Mint Linux System Tool that automates the setup and configuration of a Mint Linux system with Gnome (todo). It installs and configures packages, desktop environments, and various utilities to create a fully functional development environment.
 
 ## Features
 
@@ -13,26 +13,12 @@ A Fedora/Ubuntu Linux System Tool that automates the setup and configuration of 
 
 ## Prerequisites
 
-- A fresh Fedora/Ubuntu Linux installation
+- A fresh Mint Linux installation
 - Internet connection
 - sudo privileges
-- connect shh and giihub
+- connect shh and github
 
 ## Installation
-
-TODO before
-```bash
-ssh-keygen -t ed25519 -C "mangouste@mosaurus.com"
-```
-```bash
-eval "$(ssh-agent -s)"
-```
-```bash
-ssh-add ~/.ssh/id_ed25519
-```
-```bash
-cat ~/.ssh/id_ed25519.pub
-```
 
 1. Clone this repository:
 
@@ -49,8 +35,21 @@ git clone git@github.com:mngste/crucible.git
 
 4. The script will handle the rest of the setup process.
 
-5. After the setup is complete, you can reboot your system to see the changes.
+5. Install Alacritty
+[install alacritty](https://github.com/alacritty/alacritty/blob/master/INSTALL.md)
 
-```fish
+6. Run this for fish
+```bash
 source "$HOME/.cargo/env.fish"
 ```
+```bash
+mkdir -p $fish_complete_path[1]
+```
+```bash
+cp extra/completions/alacritty.fish $fish_complete_path[1]/alacritty.fish
+```
+
+8. Install Jetbrains mono fonts
+[jetbrains mono](https://www.jetbrains.com/lp/mono/#how-to-install)
+
+9. After the setup is complete, you can reboot your system to see the changes.
