@@ -10,7 +10,7 @@ RESET="\e[0m"
 UNDERLINE="\e[4m"
 NO_UNDERLINE="\e[24m"
 
-echo -e "${BLACK}"
+echo -e "${CYAN}"
 
 # Print the logo
 print_logo() {
@@ -32,19 +32,6 @@ echo -e "${BLUE}    Sit back while we install your linux software"
 echo
 
 pm='apt'
-
-if [ -f /etc/os-release ]; then
-    source /etc/os-release
-    if [ "$ID" === "fedora" ]; then
-        pm='dnf'
-        exit 1
-    fi
-else
-    if [ "$ID" === "linuxmint" ] || [ "$ID" === "ubuntu" ]; then
-        pm='apt'
-        exit 1
-    fi
-fi
 
 # Update the system first
 echo "${CYAN} Updating system..."
