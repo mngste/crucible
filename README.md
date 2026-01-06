@@ -42,6 +42,17 @@ git clone git@github.com:mngste/crucible.git
 ```bash
 source "$HOME/.cargo/env.fish"
 ```
+If not working create a file in
+```bash
+nano .cargo/env.fish
+```
+```bash
+# rustup shell setup
+if not contains "{cargo_bin}" $PATH
+    # Prepending path in case a system-installed rustc needs to be overridden
+    set -x PATH "{cargo_bin}" $PATH
+end
+```
 ```bash
 mkdir -p $fish_complete_path[1]
 ```
