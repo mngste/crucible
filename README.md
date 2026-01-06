@@ -46,7 +46,7 @@ source "$HOME/.cargo/env.fish"
 mkdir -p $fish_complete_path[1]
 ```
 ```bash
-cp extra/completions/alacritty.fish $fish_complete_path[1]/alacritty.fish
+cp alacritty/extra/completions/alacritty.fish $fish_complete_path[1]/alacritty.fish
 ```
 
 8. Install Jetbrains mono fonts
