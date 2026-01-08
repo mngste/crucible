@@ -64,6 +64,10 @@ cp alacritty/extra/completions/alacritty.fish $fish_complete_path[1]/alacritty.f
 [jetbrains mono](https://www.jetbrains.com/lp/mono/#how-to-install)
 
 9. install tmux + theme
+
+```
+https://github.com/catppuccin/tmux?tab=readme-ov-file#recommended-default-configuration
+```
 ```
 https://github.com/catppuccin/tmux/blob/main/docs/tutorials/01-getting-started.md
 ```
