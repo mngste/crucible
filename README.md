@@ -63,4 +63,9 @@ cp alacritty/extra/completions/alacritty.fish $fish_complete_path[1]/alacritty.f
 8. Install Jetbrains mono fonts
 [jetbrains mono](https://www.jetbrains.com/lp/mono/#how-to-install)
 
-9. After the setup is complete, you can reboot your system to see the changes.
+9. install tmux + theme
+```
+https://github.com/catppuccin/tmux/blob/main/docs/tutorials/01-getting-started.md
+```
+
+10. After the setup is complete, you can reboot your system to see the changes.
